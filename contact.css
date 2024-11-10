@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 20% 40% 25% 10% ;
+    grid-template-rows: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 200;
+    padding: 4px 0;
+}
+
+.languages{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    font-weight: 500;
+    padding: 15px;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.languages p:hover{
+    color: #ffc83c;
+}
+
+.header_link{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #f09c00;
+    transition: underline .2s ease-in;
+}
+
+.header a:hover{
+    text-decoration: underline;
+    /* transition: 0.9s; */
+}
+
+.header_button button {
+    background-color: transparent;
+    border: 1px solid  #ffc83c;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 550;
+    margin-top: 1px;
+    height: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 150px;
+  
+  }
+  
+  .header_button button:hover {
+    color: white;
+    background-color: #ffc83c;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: scale(1.02);
+  }
+
+.header_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+    margin-left: 200px;
+}
+
+.header_logo img{
+    width: 120px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.header_icons img{
+    width: 40px;
+    height: auto;
+}
+
+.location{
+    display: grid;
+    grid-template-columns: 60% 50%;
+    grid-template-rows: 500px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.location iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.row1{
+    font-size: 20px;
+    font-weight: 400;
+    width: 300px;
+    position: absolute;
+    top: -30px;
+    right: 40px;
+}
+
+.row2{
+    font-size: 20px;
+    font-weight: 400;
+    width: 330px;
+    position: absolute;
+    top: 140px;
+    right: 12px;
+}
+
+.row3{
+    font-size: 20px;
+    font-weight: 400;
+    width: 300px;
+    position: absolute;
+    bottom: -260px;
+    right: 40px;
+}
+
+.location h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: black;
+    color: white;
+    margin-top: 200px;
+    padding: 40px 20px;
+}
+
+.foot2 a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.foot2 a:hover{
+    color: #dbd9d9;
+} 
+
+.foot2 a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.foot2 a:hover::before{
+    width: 60%;
+}
+
+.foot1{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot1 img{
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.foot1 p{
+    margin-top: 50px;
+    width: 200px;
+    line-height: 15px;
+    color: #777;
+    margin-left: 20px;
+}
+
+.foot2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer input{
+    width: 200px;
+    height: 50px;
+}
+
+.footer h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #b9b9b9;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+.input button{
+    width: 70px;
+    height: 50px;
+    background-color: #ffc83c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.info{
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    color: #000000;
+}
+
+.add{
+    width: 200px;
+}
+
+span{
+    font-weight: 400;
+}
+
+.ways{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.ways img{
+    width: 50px;
+    height: auto;
+}
+
+.change{
+    margin-top: -18px;
+}
+
+.change2{
+    margin-top: -50px;
+}
+
+.ways .box1{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.column2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ways .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#ch{
+    margin-top: 30px;
+}
+
+.ways .infos h2{
+    font-weight: 500;
+}
+
+.book{
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book h2{
+    font-size: 33px;
+    margin-bottom: 20px;
+    color: #f09c00;
+    text-align: center;
+}
+
+.input2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], input[type="time"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc83c;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    color: #ffc83c;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 15px;
+  transform: scale(1.01);
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.icons img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .1s;
+}
